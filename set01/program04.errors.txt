@@ -1,0 +1,48 @@
+PS C:\Users\Ramyashree\csecondsem\C_activity_sets\set01> gcc problem04.c -O0 -g -o problem04.exe
+problem04.c: In function 'add':
+problem04.c:35:9: error: 'sum' redeclared as different kind of symbol
+     int sum=0;
+         ^~~
+problem04.c:33:29: note: previous definition of 'sum' was here
+ void add(int a, int b, int *sum)
+                             ^~~
+problem04.c:36:5: error: invalid type argument of unary '*' (have 'int')
+     *sum = a + b;
+     ^~~~
+problem04.c: In function 'main':
+problem04.c:47:9: warning: passing argument 1 of 'add' makes integer from pointer without a cast [-Wint-conversion]
+     add(&a,&b,&sum);
+         ^
+problem04.c:33:6: note: expected 'int' but argument is of type 'int *'
+ void add(int a, int b, int *sum)
+      ^~~
+problem04.c:47:12: warning: passing argument 2 of 'add' makes integer from pointer without a cast [-Wint-conversion]
+     add(&a,&b,&sum);
+            ^
+problem04.c:33:6: note: expected 'int' but argument is of type 'int *'
+ void add(int a, int b, int *sum)
+      ^~~
+PS C:\Users\Ramyashree\csecondsem\C_activity_sets\set01> gcc problem03.c                        
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file a.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+PS C:\Users\Ramyashree\csecondsem\C_activity_sets\set01> gcc problem04.c -O0 -g -o problem04.exe
+problem04.c: In function 'main':
+problem04.c:46:9: warning: passing argument 1 of 'add' makes integer from pointer without a cast [-Wint-conversion]        
+     add(&a,&b,&sum);
+         ^
+problem04.c:33:6: note: expected 'int' but argument is of type 'int *'
+ void add(int a, int b, int *sum)
+      ^~~
+problem04.c:46:12: warning: passing argument 2 of 'add' makes integer from pointer without a cast [-Wint-conversion]       
+     add(&a,&b,&sum);
+            ^
+problem04.c:33:6: note: expected 'int' but argument is of type 'int *'
+ void add(int a, int b, int *sum)
+      ^~~
+PS C:\Users\Ramyashree\csecondsem\C_activity_sets\set01> gcc problem04.c -O0 -g -o problem04.exe
+PS C:\Users\Ramyashree\csecondsem\C_activity_sets\set01> ./a.exe
+Enter the values for a and b:
+3
+Enter the values for a and b:
+4
+The sum of 3 and 4 is 7

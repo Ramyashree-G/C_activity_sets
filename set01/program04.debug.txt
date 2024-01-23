@@ -1,0 +1,48 @@
+S C:\Users\Ramyashree\csecondsem\C_activity_sets\set01> gcc problem04.c -O0 -g -o problem04.exe
+PS C:\Users\Ramyashree\csecondsem\C_activity_sets\set01> gdb a.exe       
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from C:\Users\Ramyashree\csecondsem\C_activity_sets\set01\a.exe...done.
+(gdb) b main
+Breakpoint 1 at 0x4014df: file problem03.c, line 45.
+(gdb) r
+Starting program: C:\Users\Ramyashree\csecondsem\C_activity_sets\set01/a.exe 
+[New Thread 8608.0x4548]
+[New Thread 8608.0x2524]
+
+Breakpoint 1, main () at problem03.c:45
+warning: Source file is more recent than executable.
+45          a=input();
+(gdb) n
+Enter the values for a and b:
+5
+46          b=input();
+(gdb) n
+Enter the values for a and b:
+7
+47          sum=add(a,b);
+(gdb) n
+48          output(a,b,sum);
+(gdb) n
+The sum of 5 and 7 is 1249          return 0;
+(gdb) print a
+$1 = 5
+(gdb) print b
+$2 = 7
+(gdb) print sum
+$3 = 12
+(gdb) q
+A debugging session is active.
+
+        Inferior 1 [process 8608] will be killed.
+
+Quit anyway? (y or n) y
+error return ../../gdb-7.6.1/gdb/windows-nat.c:1275 was 5
+PS C:\Users\Ramyashree\csecondsem\C_activity_sets\set01> 
