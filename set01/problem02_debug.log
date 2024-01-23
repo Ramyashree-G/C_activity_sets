@@ -1,0 +1,25 @@
++b main
+No symbol table is loaded.  Use the "file" command.
+Make breakpoint pending on future shared library load? (y or [n]) Breakpoint 1 (main) pending.
++info b
+Num     Type           Disp Enb Address    What
+1       breakpoint     keep y   <PENDING>  main
++b 7
+No symbol table is loaded.  Use the "file" command.
++b9
+Undefined command: "b9".  Try "help".
++b 9
+No symbol table is loaded.  Use the "file" command.
++b 10
+No symbol table is loaded.  Use the "file" command.
++b 11
+No symbol table is loaded.  Use the "file" command.
++start
+No symbol table loaded.  Use the "file" command.
++s
+The program is not being run.
++run
+Starting program:  
+No executable specified, use `target exec'.
++start
+No symbol table loaded.  Use the "file" command.
