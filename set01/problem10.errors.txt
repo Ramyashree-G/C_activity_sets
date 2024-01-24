@@ -1,0 +1,16 @@
+PS C:\Users\Ramyashree\csecondsem\C_activity_sets\set01> gcc problem10.c
+problem10.c: In function 'main':
+problem10.c:88:5: error: too few arguments to function 'output'
+     output(string1, string2);
+     ^~~~~~
+problem10.c:66:6: note: declared here
+ void output(char *string1, char *string2, int result)
+      ^~~~~~
+PS C:\Users\Ramyashree\csecondsem\C_activity_sets\set01> gcc problem10.c
+PS C:\Users\Ramyashree\csecondsem\C_activity_sets\set01> ./a.exe        
+Enter first string
+hell
+Enter second string
+hello
+hell is lesser than hello
+PS C:\Users\Ramyashree\csecondsem\C_activity_sets\set01>

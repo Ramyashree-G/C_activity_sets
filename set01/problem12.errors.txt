@@ -1,0 +1,23 @@
+PS C:\Users\Ramyashree\csecondsem\C_activity_sets\set01> gcc problem12.c       
+PS C:\Users\Ramyashree\csecondsem\C_activity_sets\set01> ./a.exe
+Enter the number of complex numbers:2
+Enter a complex number:2
+3
+Enter a complex number:4
+4
+The sum of the complex numbers:
+ 2 +  3i
+ 4 +  4i
+is  4+ 4i
+WRONG OUTPUT WAS CORRECTED
+PS C:\Users\Ramyashree\csecondsem\C_activity_sets\set01> gcc problem12.c 
+PS C:\Users\Ramyashree\csecondsem\C_activity_sets\set01> ./a.exe
+Enter the number of complex numbers:2
+Enter a complex number:3
+4
+Enter a complex number:2
+3
+The sum of the complex numbers:
+ 3 +  4i
+ 2 +  3i
+is  5+ 7i 

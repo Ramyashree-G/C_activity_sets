@@ -1,0 +1,6 @@
+No errors
+PS C:\Users\Ramyashree\csecondsem\C_activity_sets\set01> gcc problem09.c       
+PS C:\Users\Ramyashree\csecondsem\C_activity_sets\set01> ./a.exe
+Enter a number
+25
+Square root of 25 is  5
