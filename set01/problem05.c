@@ -47,24 +47,21 @@ int input()
 
 int compare(int a,int b,int c)
 {
-    int largest;
     if(a>=b && a>=c)
     {
-        largest =a;
-        return largest;
+        return a;
     }
-    if(b>=a && b>=c)
+    else if(b>=c)
     {
-        largest =b;
-        return largest;
+        return b;   
     }
     else
     {
-        largest =c;
-        return largest;
+        return c;
     }
 }
 void output(int a,int b,int c,int largest)
 {
     printf("The Largest is %d\n",largest);
 } 
+
