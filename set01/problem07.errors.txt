@@ -1,0 +1,32 @@
+PS C:\Users\Ramyashree\csecondsem\C_activity_sets\set01> gcc problem07.c
+PS C:\Users\Ramyashree\csecondsem\C_activity_sets\set01> ./a.exe        
+Enter the number:
+3
+The sum is:
+PS C:\Users\Ramyashree\csecondsem\C_activity_sets\set01> gcc problem07.c
+PS C:\Users\Ramyashree\csecondsem\C_activity_sets\set01> ./a.exe        
+Enter the number:
+5
+The sum is:
+PS C:\Users\Ramyashree\csecondsem\C_activity_sets\set01> gcc problem07.c
+PS C:\Users\Ramyashree\csecondsem\C_activity_sets\set01> ./a.exe        
+Enter the number:
+2
+The sum of 11539848 natural numbers is: -826288412
+PS C:\Users\Ramyashree\csecondsem\C_activity_sets\set01> gcc problem07.c
+PS C:\Users\Ramyashree\csecondsem\C_activity_sets\set01> ./a.exe
+Enter the number:
+1
+The sum of 12653960 natural numbers is: -1127196956
+PS C:\Users\Ramyashree\csecondsem\C_activity_sets\set01> gcc problem07.c
+problem07.c: In function 'main':
+problem07.c:46:19: error: redeclaration of 'n' with no linkage
+     int n, sum=0, n;
+                   ^
+problem07.c:46:9: note: previous declaration of 'n' was here
+     int n, sum=0, n;
+         ^
+PS C:\Users\Ramyashree\csecondsem\C_activity_sets\set01> ./a.exe        
+Enter the number:
+2
+The sum of 11670920 natural numbers is: -103754012
