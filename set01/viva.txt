@@ -1,18 +1,37 @@
-guess=hash is a symbol used to access the header file.
-ans=hash indicates the lines that shd be processed by the preprocessor.
+what is # ?
+hash tells the compiler the lines which should be processed.
 
-wt is a preprosessor?
-guess=the preprosessor contains library files.
-ans=it is a part of gcc compiler
+what is preprocessor?
+preprocessor is a part of gcc compiler.
+preprocessor will process the lines starting with #.
 
-wt is gcc?
-guess=it is a c language compiler which converts the human written code to machine language which is understood by the computer.
-ans=It is a compiler for C language that converts c source files to executable.
+what is compiler?
+GCC is a C language compiler that converts c source code to excecutable.
 
-preprosessor of gcc will process lines which starts with hash
+what is preprocessor directive?
+Preprocessor directive tells the compiler to process a header file.
 
-wt is the meaning of processing a line starting with hash?
-checks if the header file is included for further processing.
-input for the processing is c source file output is c source file which will have no line with hash.
+what dis the effect of #include<stdio.h>
+#include<stdio.h>
+# tell the compiler to process that line, include is preprocessor directives that tells the compiler to process the header file stdio.h and include the function prototypes into the output c source file. the input of C source code will be converted into c source code but with no hash in it. 
 
-include is called preprpcesser dirctive coz oit tells preprocessor wt to do.
+what is stdio.h?
+stdio.h is a header file which includes function prototypes.
+
+what is a function prototype?
+it consits of return type, function name, list of arguements.
+
+what is the use of function prototypes?
+it is used to check if the correct number and type of actual arguements is being passed and if the return type is correct.
+
+what is main?
+main is the point where the program starts. int main is a function which returns an integer.
+
+what is printf?
+printf is a std library function, printf tells the compiler to print the string on the screen.
+
+what is the meaning of \n ?
+the meaning of a back slash in a format string is a escape character. its function is to move cursor to newline in terminal/screen.
+
+what does return statement do?
+it reaturns the values to the called function to calling function and aptionally returns a value.
