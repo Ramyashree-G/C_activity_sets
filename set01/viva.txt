@@ -1,0 +1,18 @@
+guess=hash is a symbol used to access the header file.
+ans=hash indicates the lines that shd be processed by the preprocessor.
+
+wt is a preprosessor?
+guess=the preprosessor contains library files.
+ans=it is a part of gcc compiler
+
+wt is gcc?
+guess=it is a c language compiler which converts the human written code to machine language which is understood by the computer.
+ans=It is a compiler for C language that converts c source files to executable.
+
+preprosessor of gcc will process lines which starts with hash
+
+wt is the meaning of processing a line starting with hash?
+checks if the header file is included for further processing.
+input for the processing is c source file output is c source file which will have no line with hash.
+
+include is called preprpcesser dirctive coz oit tells preprocessor wt to do.
