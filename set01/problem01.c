@@ -1,7 +1,7 @@
 // 1. Write a C program to print your name.
 #include<stdio.h>
-int main()
+char main()
 {
     printf("Ramyashree G\n");
-    return 0;
 }
+    
