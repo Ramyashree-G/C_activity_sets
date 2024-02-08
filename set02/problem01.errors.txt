@@ -1,0 +1,22 @@
+PS C:\Users\Ramyashree\csecondsem\C_activity_sets\set02> gcc problem01.c 
+PS C:\Users\Ramyashree\csecondsem\C_activity_sets\set02> ./a.exe
+Enter the Base for a Triangle
+1
+Enter the Height for a Triangle
+1
+The Area of Triangle with Base 1.000000 and Height 1.000000 is 0.000000
+PS C:\Users\Ramyashree\csecondsem\C_activity_sets\set02> gcc problem01.c 
+PS C:\Users\Ramyashree\csecondsem\C_activity_sets\set02> ./a.exe
+Enter the Base for a Triangle
+5
+Enter the Height for a Triangle
+5
+The Area of Triangle with Base 5.000000 and Height 5.000000 is 0.000000
+PS C:\Users\Ramyashree\csecondsem\C_activity_sets\set02> gcc problem01.c 
+PS C:\Users\Ramyashree\csecondsem\C_activity_sets\set02> ./a.exe
+Enter the Base for a Triangle
+3
+Enter the Height for a Triangle
+4
+The Area of Triangle with Base 3.000000 and Height 4.000000 is 6.000000
+PS C:\Users\Ramyashree\csecondsem\C_activity_sets\set02>
