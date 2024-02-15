@@ -26,21 +26,21 @@ void input(float *base, float *height)
     scanf("%f", height);
 }
 
-void find_area(float base , float height, float *area)
+void find_area(float base, float height, float *area)
 {
-    *area= (0.5*(base*height));
+    *area = (0.5 * (base * height));
 }
 
 void output(float base, float height, float area)
 {
-    printf("The Area of Triangle with Base %f and Height %f is %f" , base, height, area);
+    printf("The Area of Triangle with Base %f and Height %f is %f", base, height, area);
 }
 
 int main()
 {
     float base, height, area;
     input(&base, &height);
-    find_area(base ,height, &area);
+    find_area(base, height, &area);
     output(base, height, area);
     return 0;
 }

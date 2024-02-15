@@ -21,3 +21,27 @@ void output(int a, int b, int c, int isscalene);
 The triangle with sides 5, 4 and 5 is not scalene
 ```
 */
+#include <stdio.h>
+int input_side()
+{
+    int t_side;
+    printf("Enter a side of a Triangle:\n");
+    scanf("%d", &t_side);
+    return t_side;
+}
+
+int check_scalene(int a, int b, int c)
+{
+    if(a!= b && b!=c && c!= a)
+    {
+        return 1;
+    }
+    else
+    {
+        return 0;
+    }
+}
+void output(int a, int b, int c, int isscalene)
+{
+    
+}
