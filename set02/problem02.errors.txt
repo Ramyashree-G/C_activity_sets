@@ -1,0 +1,9 @@
+PS C:\Users\Ramyashree\csecondsem\C_activity_sets\set02> gcc problem02.c 
+PS C:\Users\Ramyashree\csecondsem\C_activity_sets\set02> ./a.exe
+Enter a side of a Triangle:
+3
+Enter a side of a Triangle:
+4
+Enter a side of a Triangle:
+5
+The Triangle with sides 3 , 4 and 5 is 1

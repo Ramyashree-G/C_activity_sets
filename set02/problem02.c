@@ -22,6 +22,7 @@ The triangle with sides 5, 4 and 5 is not scalene
 ```
 */
 #include <stdio.h>
+
 int input_side()
 {
     int t_side;
@@ -32,7 +33,8 @@ int input_side()
 
 int check_scalene(int a, int b, int c)
 {
-    if(a!= b && b!=c && c!= a)
+    int isscalene;
+    if (a != b && b != c && c != a)
     {
         return 1;
     }
@@ -40,8 +42,27 @@ int check_scalene(int a, int b, int c)
     {
         return 0;
     }
+    return isscalene;
 }
 void output(int a, int b, int c, int isscalene)
 {
-    
+    if(isscalene>0)
+    {
+    printf("The Triangle with sides %d , %d and %d is scalene",a,b,c,isscalene);
+    }
+    else{
+    printf("The Triangle with sides %d , %d and %d is not scalene",a,b,c,isscalene);
+    }
+}
+
+int main()
+{
+    int a,b,c;
+    a= input_side();
+    b= input_side();
+    c= input_side();
+    int isscalene;
+    isscalene = check_scalene(a,b,c);
+    output(a, b, c, isscalene);
+    return 0;
 }
