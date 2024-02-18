@@ -46,23 +46,24 @@ int check_scalene(int a, int b, int c)
 }
 void output(int a, int b, int c, int isscalene)
 {
-    if(isscalene>0)
+    if (isscalene > 0)
     {
-    printf("The Triangle with sides %d , %d and %d is scalene",a,b,c,isscalene);
+        printf("The Triangle with sides %d , %d and %d is scalene", a, b, c, isscalene);
     }
-    else{
-    printf("The Triangle with sides %d , %d and %d is not scalene",a,b,c,isscalene);
+    else
+    {
+        printf("The Triangle with sides %d , %d and %d is not scalene", a, b, c, isscalene);
     }
 }
 
 int main()
 {
-    int a,b,c;
-    a= input_side();
-    b= input_side();
-    c= input_side();
+    int a, b, c;
+    a = input_side();
+    b = input_side();
+    c = input_side();
     int isscalene;
-    isscalene = check_scalene(a,b,c);
+    isscalene = check_scalene(a, b, c);
     output(a, b, c, isscalene);
     return 0;
 }
