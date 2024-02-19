@@ -1,0 +1,49 @@
+PS C:\Users\Ramyashree\csecondsem\C_activity_sets\set05> gcc problem02.c
+problem02.c: In function 'find_weight':
+problem02.c:29:12: error: expected expression before '=' token
+ #define Pi = 3.1415
+            ^
+problem02.c:44:14: note: in expansion of macro 'Pi'
+     weight=  Pi * pow(radius, 3) * sqrt(height * length);
+              ^~
+problem02.c: In function 'main':
+problem02.c:56:25: warning: passing argument 1 of 'input_camel_details' from incompatible pointer type [-Wincompatible-pointer-types]
+     input_camel_details(&radius, &height, &length);
+                         ^
+problem02.c:31:6: note: expected 'float *' but argument is of type 'int *'
+ void input_camel_details(float *radius, float *height, float *length)
+      ^~~~~~~~~~~~~~~~~~~
+problem02.c:56:34: warning: passing argument 2 of 'input_camel_details' from incompatible pointer type [-Wincompatible-pointer-types]
+     input_camel_details(&radius, &height, &length);
+                                  ^
+problem02.c:31:6: note: expected 'float *' but argument is of type 'int *'
+ void input_camel_details(float *radius, float *height, float *length)
+      ^~~~~~~~~~~~~~~~~~~
+problem02.c:56:43: warning: passing argument 3 of 'input_camel_details' from incompatible pointer type [-Wincompatible-pointer-types]
+     input_camel_details(&radius, &height, &length);
+                                           ^
+problem02.c:31:6: note: expected 'float *' but argument is of type 'int *'
+ void input_camel_details(float *radius, float *height, float *length)
+      ^~~~~~~~~~~~~~~~~~~
+PS C:\Users\Ramyashree\csecondsem\C_activity_sets\set05>
+PS C:\Users\Ramyashree\csecondsem\C_activity_sets\set05> gcc problem02.c
+problem02.c: In function 'main':
+problem02.c:56:25: warning: passing argument 1 of 'input_camel_details' from incompatible pointer type [-Wincompatible-pointer-types]
+     input_camel_details(&radius, &height, &length);
+                         ^
+problem02.c:31:6: note: expected 'float *' but argument is of type 'int *'
+ void input_camel_details(float *radius, float *height, float *length)
+      ^~~~~~~~~~~~~~~~~~~
+problem02.c:56:34: warning: passing argument 2 of 'input_camel_details' from incompatible pointer type [-Wincompatible-pointer-types]
+     input_camel_details(&radius, &height, &length);
+                                  ^
+problem02.c:31:6: note: expected 'float *' but argument is of type 'int *'
+ void input_camel_details(float *radius, float *height, float *length)
+      ^~~~~~~~~~~~~~~~~~~
+problem02.c:56:43: warning: passing argument 3 of 'input_camel_details' from incompatible pointer type [-Wincompatible-pointer-types]
+     input_camel_details(&radius, &height, &length);
+                                           ^
+problem02.c:31:6: note: expected 'float *' but argument is of type 'int *'
+ void input_camel_details(float *radius, float *height, float *length)
+      ^~~~~~~~~~~~~~~~~~~
+PS C:\Users\Ramyashree\csecondsem\C_activity_sets\set05> 
