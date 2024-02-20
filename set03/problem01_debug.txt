@@ -1,0 +1,95 @@
+PS C:\Users\Ramyashree\csecondsem\C_activity_sets\set03> gdb ./problem01.exe
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from C:\Users\Ramyashree\csecondsem\C_activity_sets\set03\problem01.exe...done.
+(gdb) b main
+Breakpoint 1 at 0x40157b: file problem01.c, line 51.
+(gdb) r
+Starting program: C:\Users\Ramyashree\csecondsem\C_activity_sets\set03/./problem01.exe 
+[New Thread 12112.0x2910]
+[New Thread 12112.0x38a0]
+
+Breakpoint 1, main () at problem01.c:51
+51          input(&x1, &x2, &y1, &y2);
+(gdb) s
+input (x1=0x61ff18, y1=0x61ff14, x2=0x61ff10, y2=0x61ff0c) at problem01.c:28
+28          printf("Enter the x co-ordinate for First point\n");
+(gdb) n
+Enter the x co-ordinate for First point
+29          scanf("%f", x1);
+(gdb) n
+2
+30          printf("Enter the y co-ordinate for First point\n");
+(gdb) n
+Enter the y co-ordinate for First point
+31          scanf("%f", y1);
+(gdb) n
+2
+32          printf("Enter the x co-ordinate for Second point\n");
+(gdb) n
+Enter the x co-ordinate for Second point
+33          scanf("%f", x2);
+(gdb) n
+4
+34          printf("Enter the  co-ordinate for Second point\n");
+(gdb) n
+Enter the  co-ordinate for Second point
+35          scanf("%f", y2);
+(gdb) n
+4
+36      }
+(gdb) n
+main () at problem01.c:53
+53          distance = find_distance(x1, x2, y1, y2);
+(gdb) s
+find_distance (x1=2, y1=2, x2=4, y2=4) at problem01.c:41
+41          distance = sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2));
+(gdb) n
+42          return distance;
+(gdb) n
+43      }
+(gdb) p distance
+$1 = 2.82842708
+(gdb) n
+main () at problem01.c:54
+54          output(x1, y1, x2, y2, distance);
+(gdb) n
+The Distance between point (2.000000, 4.000000) and (2.000000, 4.000000) is 2.82842755      return 0;
+(gdb) p x1
+$2 = 2
+(gdb) p x2
+$3 = 2
+(gdb) p y1
+$4 = 4
+(gdb) p y2
+$5 = 4
+(gdb) p distance
+$6 = 2.82842708
+(gdb) n
+56      }(gdb) n
+0x00401288 in __register_frame_info ()
+(gdb) n
+Single stepping until exit from function __register_frame_info,
+which has no line number information.
+0x0040128a in __register_frame_info ()
+(gdb) n
+Single stepping until exit from function __register_frame_info,
+which has no line number information.
+0x0040128f in __register_frame_info ()
+(gdb) n
+Single stepping until exit from function __register_frame_info,
+which has no line number information.
+0x00401292 in __register_frame_info ()
+(gdb) n
+Single stepping until exit from function __register_frame_info,
+which has no line number information.
+[Inferior 1 (process 12112) exited normally]
+(gdb) q
+PS C:\Users\Ramyashree\csecondsem\C_activity_sets\set03>
