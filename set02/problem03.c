@@ -20,3 +20,20 @@ void output(int n, int result);
 ```
 
 ---*/
+
+#include <stdio.h>
+int input_number()
+{
+    int n;
+    printf("Enter a Number\n");
+    scanf("%d", &n);
+    return n;
+}
+int is_composite(int n)
+{
+
+}
+void output(int n, int result)
+{
+
+}
