@@ -1,0 +1,13 @@
+PS C:\Users\Ramyashree\csecondsem\C_activity_sets\set05> gcc problem03.c
+problem03.c: In function 'find_weight':
+problem03.c:55:54: error: expected expression before '.' token
+     weight = Pi * pow(c.radius, 3) * sqrt(c.height * .length);
+PS C:\Users\Ramyashree\csecondsem\C_activity_sets\set05> gcc problem03.c
+PS C:\Users\Ramyashree\csecondsem\C_activity_sets\set05> ./a.exe        
+Enter the Stomach radius, height and length:
+3
+Enter the Stomach radius, height and length:
+4
+Enter the Stomach radius, height and length:
+5
+The weight of the camel with radius: 0.000000, height: 0, length: 0.000000 is 0.000000

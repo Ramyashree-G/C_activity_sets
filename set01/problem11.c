@@ -23,7 +23,7 @@ void output(Complex a, Complex b, Complex sum);
 ```
 The sum of 2+3i and 4+5i is 6+8i
 ```*/
-#include<stdio.h>
+#include<stdio.h> //composite data
 struct _complex {
    float real;
    float imaginary;
