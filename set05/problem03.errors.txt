@@ -1,13 +1,18 @@
-PS C:\Users\Ramyashree\csecondsem\C_activity_sets\set05> gcc problem03.c
+PS C:\Users\Ramyashree\csecondsem\C_activity_sets\set05> gcc problem03.c 
 problem03.c: In function 'find_weight':
-problem03.c:55:54: error: expected expression before '.' token
-     weight = Pi * pow(c.radius, 3) * sqrt(c.height * .length);
-PS C:\Users\Ramyashree\csecondsem\C_activity_sets\set05> gcc problem03.c
-PS C:\Users\Ramyashree\csecondsem\C_activity_sets\set05> ./a.exe        
-Enter the Stomach radius, height and length:
+problem03.c:60:25: warning: implicit declaration of function 'pow' [-Wimplicit-function-declaration]
+     c.weight = 3.1415 * pow(c.radius, 3) * sqrt(c.height * c.length);
+                         ^~~
+problem03.c:60:25: warning: incompatible implicit declaration of built-in function 'pow'
+problem03.c:60:25: note: include '<math.h>' or provide a declaration of 'pow'
+problem03.c:60:44: warning: implicit declaration of function 'sqrt' [-Wimplicit-function-declaration]
+     c.weight = 3.1415 * pow(c.radius, 3) * sqrt(c.height * c.length);
+                                            ^~~~
+problem03.c:60:44: warning: incompatible implicit declaration of built-in function 'sqrt'
+problem03.c:60:44: note: include '<math.h>' or provide a declaration of 'sqrt'
+Enter the Stomach radius of the Camel:
 3
-Enter the Stomach radius, height and length:
+Enter height of the Camel:
 4
-Enter the Stomach radius, height and length:
+Enter the legth of the Camel:
 5
-The weight of the camel with radius: 0.000000, height: 0, length: 0.000000 is 0.000000
