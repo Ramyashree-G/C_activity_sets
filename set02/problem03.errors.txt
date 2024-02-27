@@ -1,0 +1,7 @@
+PS C:\Users\Ramyashree\csecondsem\C_activity_sets\set02> gcc problem03.c
+problem03.c: In function 'is_composite':
+problem03.c:35:17: warning: implicit declaration of function 'sqrt' [-Wimplicit-function-declaration]
+     for(i=2; i<=sqrt(n)+1; i++)
+                 ^~~~
+problem03.c:35:17: warning: incompatible implicit declaration of built-in function 'sqrt'
+problem03.c:35:17: note: include '<math.h>' or provide a declaration of 'sqrt'

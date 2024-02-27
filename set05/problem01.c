@@ -52,7 +52,7 @@ Point input()
 }
 void dist(Point a, Point b, float *res)
 {
-    sqrt(pow(p.y - p.x,2))
+  p->res = sqrt(pow(p->y - p->x,2)+ pow(p->y - p->x,2));
 }
 int main()
 {
