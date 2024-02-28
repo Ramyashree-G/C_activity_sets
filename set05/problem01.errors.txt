@@ -1,0 +1,8 @@
+PS C:\Users\Ramyashree\csecondsem\C_activity_sets\set05> gcc problem01.c
+problem01.c: In function 'main':
+problem01.c:66:14: warning: passing argument 3 of 'dist' from incompatible pointer type [-Wincompatible-pointer-types]
+   dist(a, b, &distance);
+              ^
+problem01.c:53:6: note: expected 'float *' but argument is of type 'Point * {aka struct _point *}'
+ void dist(Point a, Point b, float *res)
+      ^~~~
