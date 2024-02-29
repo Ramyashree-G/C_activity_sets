@@ -1,0 +1,95 @@
+PS C:\Users\Ramyashree\csecondsem\C_activity_sets\set04> gcc problem01.c -O0 -g -o problem01.exe
+PS C:\Users\Ramyashree\csecondsem\C_activity_sets\set04> gdb ./problem01.exe 
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from C:\Users\Ramyashree\csecondsem\C_activity_sets\set04\problem01.exe...done.
+(gdb) b main
+Breakpoint 1 at 0x401530: file problem01.c, line 44.
+(gdb) r
+Starting program: C:\Users\Ramyashree\csecondsem\C_activity_sets\set04/./problem01.exe 
+[New Thread 21156.0x4704]
+[New Thread 21156.0x277c]
+
+Breakpoint 1, main () at problem01.c:44
+44          input(&num1, &den1, &num2, &den2);
+(gdb) s
+input (num1=0x61ff0c, den1=0x61ff04, num2=0x61ff08, den2=0x61ff00) at problem01.c:27
+27          printf("Enter the Numerator and the Denominator for the first Fraction:\n");
+(gdb) n
+Enter the Numerator and the Denominator for the first Fraction:
+28          scanf("%d %d", num1, den1);
+(gdb) n
+2
+3
+29          printf("Enter the Numerator and the Denominator for the Second Fraction:\n");
+(gdb) n
+Enter the Numerator and the Denominator for the Second Fraction:
+30          scanf("%d %d", num2, den2);
+(gdb) n
+4
+5
+31      }
+(gdb) s
+main () at problem01.c:46
+46          add(num1, den1, num2, den2, &res_num, &res_den);
+(gdb) s
+add (num1=2, den1=3, num2=4, den2=5, res_num=0x61fefc, res_den=0x61fef8) at problem01.c:34
+34          *res_num = ((num1 * den2) + (num2 * den1));
+(gdb) p num1
+$1 = 2
+(gdb) p num2
+$2 = 4
+(gdb) p den1
+$3 = 3
+(gdb) p den2
+$4 = 5
+(gdb) p res_num
+$5 = (int *) 0x61fefc
+(gdb) p *res_num
+$6 = 6422280
+(gdb) s
+35          *res_den = (den1 * den2);
+(gdb) p *res_den
+$7 = -2
+(gdb) p *res_num
+$8 = 22
+(gdb) s
+36      }
+(gdb) s
+main () at problem01.c:47
+47          output(num1, den1, num2, den2, res_num, res_den);
+(gdb) p num1
+$9 = 2
+(gdb) p den1
+$10 = 3
+(gdb) p num2
+$11 = 4
+(gdb) p den2
+$12 = 5
+(gdb) p res_num
+$13 = 22
+(gdb) p res_den
+$14 = 15
+(gdb) s
+output (num1=2, den1=3, num2=4, den2=5, res_num=22, res_den=15) at problem01.c:39
+39          printf("%d/%d + %d/%d = %d/%d", num1, den1, num2, den2, res_num, res_den);
+(gdb) s
+2/3 + 4/5 = 22/1540     }
+(gdb) n
+main () at problem01.c:48
+48          return 0;
+(gdb) q
+A debugging session is active.
+
+        Inferior 1 [process 21156] will be killed.
+
+Quit anyway? (y or n) y
+error return ../../gdb-7.6.1/gdb/windows-nat.c:1275 was 5
+PS C:\Users\Ramyashree\csecondsem\C_activity_sets\set04> 
