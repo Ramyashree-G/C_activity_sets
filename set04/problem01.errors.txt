@@ -1,0 +1,11 @@
+no errors
+PS C:\Users\Ramyashree\csecondsem\C_activity_sets\set04> gcc problem01.c
+PS C:\Users\Ramyashree\csecondsem\C_activity_sets\set04> ./a.exe
+Enter the Numerator and the Denominator for the first Fraction:
+1
+4
+Enter the Numerator and the Denominator for the Second Fraction:
+1
+4
+1/4 + 1/4 = 8/16
+PS C:\Users\Ramyashree\csecondsem\C_activity_sets\set04> 
