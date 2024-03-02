@@ -53,7 +53,7 @@ int compare(int a,int b,int c)
     }
     else if(b>=c)
     {
-        return b;   
+        return b;
     }
     else
     {

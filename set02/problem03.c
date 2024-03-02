@@ -33,7 +33,7 @@ int input_number()
 int is_composite(int n)
 {
     int i;
-    for (i = 2; i <= sqrt(n) + 1; i++)
+    for (i = 2; i <= sqrt(n); i++)
     {
         if (n % i == 0)
         {
