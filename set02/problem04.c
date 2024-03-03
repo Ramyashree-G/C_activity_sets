@@ -20,8 +20,8 @@ void output(int sum);
 
 ---*/
 
-#include<stdio.h>
-#include<math.h>
+#include <stdio.h>
+#include <math.h>
 
 int input_array_size()
 {
@@ -33,7 +33,7 @@ int input_array_size()
 void input_array(int n, int a[n])
 {
     int i;
-    for(i=0;i<n;i++)
+    for (i = 0; i < n; i++)
     {
         printf("Enter the composite numbers\n");
         scanf("%d", &a[i]);
@@ -41,13 +41,11 @@ void input_array(int n, int a[n])
 }
 int sum_composite_numbers(int n, int a[n])
 {
-    
 }
 int main()
 {
     int n;
     n = input_array_size();
     int a[n];
-    input_array(n,a);
-
+    input_array(n, a);
 }
